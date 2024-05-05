@@ -54,6 +54,9 @@ Save this file as `erd.mmd`, and then run the following command:
 mmdc -i erd.mmd -o erd.png -t dark -b transparent
 ```
 You'll find that an `erd.png` file has been created in the folder. It looks like this:
+
+![](https://github.com/nydasco/diagrams_as_code/blob/23b1e2bfea5e63661347ab55400ab590d16f89bd/erd.png)
+
 This is the same simple database that I've used in my Introduction to SQL articles.
 
 ## Code Walk-Thru
