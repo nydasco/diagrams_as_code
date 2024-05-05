@@ -1,0 +1,28 @@
+erDiagram
+    sale {
+        id int PK
+        employee_id int FK
+        client_id int FK
+        date datetime
+        region varchar
+        sale numeric
+    }
+    employee {
+        id int PK
+        first_name varchar
+        last_name varchar
+        department_id int FK
+    }
+    client {
+        id int PK
+        first_name varchar
+        last_name varchar
+    }
+    department {
+        id int PK
+        department varchar
+    }
+
+    department ||--o{ employee : contains
+    employee ||--o{ sale : assists
+    client ||--|{ sale : creates
